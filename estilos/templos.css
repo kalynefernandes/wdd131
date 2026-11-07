@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f6f8;
+    color: #1a252c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a365d;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+}
+
+header span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#menu-hamburguer {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a365d;
+    text-align: center;
+    z-index: 10;
+}
+
+nav.mostrar {
+    display: flex;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+    border-top: 1px solid #2b4c7e;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #2b4c7e;
+}
+
+main {
+    max-width: 1000px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    flex: 1;
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+}
+
+.grid-templos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+figure {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+figcaption {
+    padding: 0.8rem;
+    font-weight: 600;
+    color: #1a365d;
+}
+
+footer {
+    background-color: #1a365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}

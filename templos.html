@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo | WDD 131</title>
+    <meta name="description" content="Página de galeria e álbum de fotos de templos responsiva para o curso WDD 131.">
+    <meta name="author" content="Kalyne Fernandes">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS Mobile First -->
+    <link rel="stylesheet" href="estilos/templos.css">
+    <!-- CSS Telas Grandes -->
+    <link rel="stylesheet" href="estilos/templos-grandes.css" media="(min-width: 600px)">
+    <!-- JavaScript diferido -->
+    <script src="scripts/templos.js" defer></script>
+</head>
+<body>
+    <header>
+        <span>Álbum do Templo</span>
+        <button id="menu-hamburguer" aria-label="Abrir Menu de Navegação">&#9776;</button>
+        <nav id="menu-nav">
+            <a href="#">Página Inicial</a>
+            <a href="#">Antigo</a>
+            <a href="#">Novo</a>
+            <a href="#">Grande</a>
+            <a href="#">Pequeno</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Galeria de Templos</h1>
+        <div class="grid-templos">
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Manti/Manti-Utah-Temple-1.jpg" alt="Templo de Manti Utah" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Manti Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Salt-Lake/Salt-Lake-Temple-1.jpg" alt="Templo de Salt Lake" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Salt Lake</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Sao-Paulo-Brazil/Sao-Paulo-Brazil-Temple-1.jpg" alt="Templo de São Paulo Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de São Paulo Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Campinas-Brazil/Campinas-Brazil-Temple-1.jpg" alt="Templo de Campinas Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Campinas Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Curitiba-Brazil/Curitiba-Brazil-Temple-1.jpg" alt="Templo de Curitiba Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Curitiba Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Rio-de-Janeiro-Brazil/Rio-de-Janeiro-Brazil-Temple-1.jpg" alt="Templo do Rio de Janeiro Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo do Rio de Janeiro Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Fortaleza-Brazil/Fortaleza-Brazil-Temple-1.jpg" alt="Templo de Fortaleza Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Fortaleza Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Porto-Alegre-Brazil/Porto-Alegre-Brazil-Temple-1.jpg" alt="Templo de Porto Alegre Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Porto Alegre Brasil</figcaption>
+            </figure>
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/temples/bc/Brasilia-Brazil/Brasilia-Brazil-Temple-1.jpg" alt="Templo de Brasília Brasil" loading="lazy" width="400" height="250">
+                <figcaption>Templo de Brasília Brasil</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Kalyne Fernandes | Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
