@@ -1,4 +1,38 @@
-<main>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum do Templo | WDD 131</title>
+    <meta name="description" content="Página de galeria e álbum de fotos de templos responsiva para o curso WDD 131.">
+    <meta name="author" content="Kalyne Fernandes">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Estilos -->
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grandes.css" media="(min-width: 600px)">
+    
+    <!-- JavaScript -->
+    <script src="scripts/templos.js" defer></script>
+</head>
+<body>
+    <header>
+        <span>Álbum do Templo</span>
+        <button id="menu-hamburguer" aria-label="Menu">&#9776;</button>
+        <nav id="menu-nav">
+            <a href="#">Página Inicial</a>
+            <a href="#">Antigo</a>
+            <a href="#">Novo</a>
+            <a href="#">Grande</a>
+            <a href="#">Pequeno</a>
+        </nav>
+    </header>
+
+    <main>
         <h1>Galeria de Templos</h1>
         <div class="grid-templos">
             <figure>
@@ -39,3 +73,10 @@
             </figure>
         </div>
     </main>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> | Kalyne Fernandes | Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
