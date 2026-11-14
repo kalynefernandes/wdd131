@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça o Brasil | WDD 131</title>
+    <meta name="description" content="Página dedicada ao Brasil, explorando cultura, paisagens e dados climáticos para a tarefa S03 do curso WDD 131.">
+    <meta name="author" content="Kalyne Fernandes">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/local.css">
+    
+    <!-- JavaScript com defer -->
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Conheça o Brasil</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Geografia</a>
+            <a href="#">Clima</a>
+            <a href="#">Cultura</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Um País de Riquezas Naturais e Culturais</h2>
+            <picture>
+                <source media="(min-width: 768px)" srcset="imagens/brasil-grande.webp">
+                <img src="imagens/brasil-pequeno.webp" alt="Paisagem panorâmica do Brasil" width="800" height="450" loading="lazy">
+            </picture>
+            <p>O Brasil é o maior país da América do Sul e da América Latina, conhecido mundialmente pela sua diversidade ecológica, praias deslumbrantes, rica herança cultural e um povo acolhedor.</p>
+        </section>
+
+        <section class="dados-gerais">
+            <h3>Sobre o País</h3>
+            <ul>
+                <li><strong>Capital:</strong> Brasília</li>
+                <li><strong>Idioma Oficial:</strong> Português</li>
+                <li><strong>População:</strong> Aprox. 203 milhões</li>
+                <li><strong>Moeda:</strong> Real (BRL)</li>
+            </ul>
+        </section>
+
+        <section class="clima-secao">
+            <h3>Clima <span class="icone-clima-desktop"></span></h3>
+            <div class="card-clima">
+                <!-- Ícone SVG para visualização móvel -->
+                <img src="imagens/clima.svg" alt="Ícone de clima ensolarado com nuvem" class="icone-clima-svg" width="40" height="40">
+                <div class="info-clima">
+                    <p><strong>Temperatura:</strong> <span id="temperatura">24</span> °C</p>
+                    <p><strong>Condição:</strong> Parcialmente Nublado</p>
+                    <p><strong>Velocidade do Vento:</strong> <span id="vento">10</span> km/h</p>
+                    <p><strong>Sensação Térmica:</strong> <span id="sensacao">N/A</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="anoatual"></span> | Kalyne Fernandes | Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>

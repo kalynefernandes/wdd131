@@ -1,0 +1,137 @@
+:root {
+    --primary-color: #009c3b; /* Verde bandeira */
+    --secondary-color: #ffdf00; /* Amarelo bandeira */
+    --dark-color: #002776; /* Azul bandeira */
+    --light-bg: #f8f9fa;
+    --text-color: #333333;
+    --font-main: 'Open Sans', sans-serif;
+    --font-heading: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    font-family: var(--font-heading);
+    color: var(--secondary-color);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--dark-color);
+    margin-bottom: 0.8rem;
+}
+
+.card-clima {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Visão móvel exibe o SVG */
+.icone-clima-svg {
+    display: block;
+}
+
+.icone-clima-desktop {
+    display: none;
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+/* Media Query para telas maiores (Desktop) */
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 3rem;
+    }
+
+    .container {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    /* Ocultar SVG no mobile e usar pseudo-elemento no desktop conforme requisito */
+    .icone-clima-svg {
+        display: none;
+    }
+
+    .icone-clima-desktop {
+        display: inline-block;
+    }
+
+    .clima-secao h3::after {
+        content: " ⛅";
+    }
+}
