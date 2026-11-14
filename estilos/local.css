@@ -1,7 +1,8 @@
+/* Estilos base (Mobile) */
 :root {
-    --primary-color: #009c3b; /* Verde bandeira */
-    --secondary-color: #ffdf00; /* Amarelo bandeira */
-    --dark-color: #002776; /* Azul bandeira */
+    --primary-color: #009c3b;
+    --secondary-color: #ffdf00;
+    --dark-color: #002776;
     --light-bg: #f8f9fa;
     --text-color: #333333;
     --font-main: 'Open Sans', sans-serif;
@@ -89,7 +90,6 @@ h2, h3 {
     margin-top: 1rem;
 }
 
-/* Visão móvel exibe o SVG */
 .icone-clima-svg {
     display: block;
 }
@@ -106,8 +106,8 @@ footer {
     margin-top: 3rem;
 }
 
-/* Media Query para telas maiores (Desktop) */
-@media (min-width: 768px) {
+/* MEDIA QUERY OBRIGATÓRIA PARA A AUDITORIA */
+@media screen and (min-width: 768px) {
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -122,7 +122,6 @@ footer {
         grid-column: 1 / -1;
     }
 
-    /* Ocultar SVG no mobile e usar pseudo-elemento no desktop conforme requisito */
     .icone-clima-svg {
         display: none;
     }
