@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Álbum do Templo | WDD 131</title>
+  <meta name="description" content="Galeria de fotos de templos responsiva para o curso WDD 131.">
+  <meta name="author" content="Kalyne Fernandes">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Estilos -->
+  <link rel="stylesheet" href="estilos/templos-filtrados.css">
+  <link rel="stylesheet" href="estilos/templos-filtrados-grandes.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/templos-filtrados.js" defer></script>
+</head>
+<body>
+  <header>
+    <span>Álbum do Templo</span>
+    <button id="menu-hamburguer" aria-label="Menu">☰</button>
+    <nav id="menu-nav" aria-label="Filtros de templos">
+      <a href="#inicio" data-filtro="inicio">Página Inicial</a>
+      <a href="#antigos" data-filtro="antigos">Antigos</a>
+      <a href="#novos" data-filtro="novos">Novos</a>
+      <a href="#grandes" data-filtro="grandes">Grandes</a>
+      <a href="#pequenos" data-filtro="pequenos">Pequenos</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="titulo-filtro">Página Inicial</h1>
+    <div id="cards-templos" class="grid-templos"></div>
+  </main>
+
+  <footer>
+    <p>© <span id="anoatual"></span> | Kalyne Fernandes | Brasil</p>
+    <p id="ultimaModificacao"></p>
+  </footer>
+</body>
+</html>
