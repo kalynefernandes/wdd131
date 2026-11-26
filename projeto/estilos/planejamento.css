@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #f7f9fb;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #16324f;
+  color: #ffffff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #16324f;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+section {
+  background-color: #ffffff;
+  border-left: 4px solid #1f6f78;
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.5rem;
+}
+
+.wireframes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .wireframes-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.wireframe-box {
+  border: 1px dashed #1f6f78;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #f7f9fb;
+}
+
+.wireframe-box h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.wf-bloco {
+  background-color: #ffffff;
+  border: 1px solid #16324f;
+  color: #16324f;
+  padding: 0.6rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.wf-linha-dupla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+footer {
+  background-color: #16324f;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
